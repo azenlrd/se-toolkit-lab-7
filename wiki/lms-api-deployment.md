@@ -121,6 +121,16 @@ The deployment starts four [services](./docker-compose.md#service) defined in [`
    docker compose --env-file .env.docker.secret up --build -d
    ```
 
+   > <h3>Troubleshooting</h3>
+   >
+   > [**Port conflict (`port is already allocated`)**](./docker.md#port-conflict-port-is-already-allocated)
+   >
+   > [**Containers exit immediately**](./docker-compose.md#containers-exit-immediately)
+   >
+   > [**Image pull fails**](./docker.md#image-pull-fails)
+   >
+   > [**DNS resolution errors (`getaddrinfo EAI_AGAIN`)**](./docker.md#dns-resolution-errors-getaddrinfo-eai_again)
+
 2. To check that the [containers](./docker.md#container) are running,
 
    [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
@@ -138,16 +148,6 @@ The deployment starts four [services](./docker-compose.md#service) defined in [`
    pgadmin    Up 50 seconds
    postgres   Up 55 seconds (healthy)
    ```
-
-> <h3>Troubleshooting</h3>
->
-> [**Port conflict (`port is already allocated`)**](#port-conflict-port-is-already-allocated)
->
-> [**Containers exit immediately**](#containers-exit-immediately)
->
-> [**Image pull fails**](#image-pull-fails)
->
-> [**DNS resolution errors (`getaddrinfo EAI_AGAIN`)**](#dns-resolution-errors-getaddrinfo-eai_again)
 
 ### Populate the database (LOCAL)
 
