@@ -8,6 +8,6 @@ def handle(args: str = "") -> str:
         "/start  — Welcome message\n"
         "/help   — Show this help\n"
         "/health — Check backend status\n"
-        "/scores <lab-id> — View scores for a lab\n"
-        "/labs   — List available labs"
+        "/labs   — List available labs\n"
+        "/scores <lab-id> — View per-task pass rates for a lab"
     )
