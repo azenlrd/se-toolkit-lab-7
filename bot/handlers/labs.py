@@ -8,7 +8,7 @@ def handle(args: str = "") -> str:
     """List available labs from the backend."""
     try:
         items = api_client.get_items()
-        labs = [item for item in items if item.get("type") == "module"]
+        labs = [item for item in items if item.get("type") == "lab"]
         if not labs:
             return "No labs found."
         lines = ["Available labs:"]
